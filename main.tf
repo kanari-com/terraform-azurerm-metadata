@@ -26,6 +26,7 @@ locals {
     var.service_name != "" ? { service_name = var.service_name } : {},
     var.subnet_type != "" ? { subnet_type = var.subnet_type } : {},
     var.virtual_network_gateway_type != "" ? { virtual_network_gateway_type = var.virtual_network_gateway_type } : {},
+    { environmentShort = local.naming_rules.environmentShort.allowed_values[var.environment] }
   )
 
   # Tagging metadata
