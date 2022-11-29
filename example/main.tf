@@ -21,7 +21,7 @@ module "subscription" {
 }
 
 module "naming" {
-  source = "git@github.com:redoceantechnology/terraform-azure-naming.git?ref=v1.0.2"
+  source = "git@github.com:kanari-com/terraform-azure-naming.git?ref=v1.0.17"
 }
 
 module "metadata" {
